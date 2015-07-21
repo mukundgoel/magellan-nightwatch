@@ -1,0 +1,81 @@
+{
+  "name": "magellan-nightwatch",
+  "version": "1.4.13",
+  "description": "magellan ========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TestArmada/magellan-nightwatch.git"
+  },
+  "contributors": [
+    {
+      "name": "Dave Cadwallader",
+      "url": "https://github.com/geekdave"
+    },
+    {
+      "name": "Maciej Adwent",
+      "url": "https://github.com/Maciek416"
+    },
+    {
+      "name": "Yamei Wang"
+    },
+    {
+      "name": "Jory Graham",
+      "url": "https://github.com/jory"
+    },
+    {
+      "name": "Patrick Kettner",
+      "url": "https://github.com/patrickkettner"
+    },
+    {
+      "name": "Gwen Roberts"
+    },
+    {
+      "name": "Per Nilsson",
+      "url": "https://github.com/per-nilsson"
+    },
+    {
+      "name": "Sergey Chebykin",
+      "url": "https://github.com/dr-nafanya"
+    },
+    {
+      "name": "Aaron Pollack",
+      "url": "https://github.com/lolpack"
+    },
+    {
+      "name": "Lei Zhu",
+      "url": "https://github.com/archlichking"
+    },
+    {
+      "name": "Rob Gerstenberger",
+      "url": "https://github.com/rgerstenberger"
+    },
+    {
+      "name": "Abha Gupta"
+    },
+    {
+      "name": "Mukund Goel",
+      "url": "https://github.com/mukundgoel"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "git+https://git@github.com/geekdave/node-chromedriver#skip-smartos",
+    "cli-color": "0.3.2",
+    "json-stringify-safe": "5.0.0",
+    "jsonfile": "2.0.0",
+    "lodash": "2.4.1",
+    "methodmissing": "0.0.3",
+    "phantomjs": "1.9.12",
+    "q": "1.0.1",
+    "qs": "2.2.4",
+    "request": "2.40.0",
+    "sanitize-filename": "1.3.0",
+    "selenium-server": "2.43.1",
+    "send": "0.10.1",
+    "yargs": "1.3.2"
+  }
+}
