@@ -1,6 +1,6 @@
 {
   "name": "magellan-nightwatch",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "magellan ========",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,8 @@
       "url": "https://github.com/patrickkettner"
     },
     {
-      "name": "Gwen Roberts"
+      "name": "Gwen Roberts",
+      "url": "https://github.com/gwenr"
     },
     {
       "name": "Per Nilsson",
