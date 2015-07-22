@@ -1,5 +1,5 @@
 {
-  "name": "@testarmada/magellan-nightwatch",
+  "name": "testarmada-magellan-nightwatch",
   "version": "1.4.15",
   "description": "magellan ========",
   "main": "index.js",
