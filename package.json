@@ -1,6 +1,6 @@
 {
   "name": "testarmada-magellan-nightwatch",
-  "version": "1.4.15",
+  "version": "1.4.16",
   "description": "magellan ========",
   "main": "index.js",
   "scripts": {
