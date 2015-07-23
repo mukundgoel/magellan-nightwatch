@@ -130,6 +130,8 @@ Some Nightwatch commands and assertions are supported out of the box.
 * `saveScreenshot()`
 * `setCookie()`
 * `url()`
+* `getText()`
+* `getValue()`
 
 #### Supported Nightwatch Assertions
 
