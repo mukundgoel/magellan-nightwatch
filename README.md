@@ -11,7 +11,9 @@ For instructions on how to run tests, please see the `magellan` documentation at
 Tests are structured as simple modules with a single exported object containing keyed functions. The functions are executed in the order in which they appear in the object source. Each function represents a step in the test, and its key in the test object should represent the name of the step. Each step function gets a `client` as an argument which represents a browser. For more information on writing tests, see the [Nightwatch.js documentation](http://nightwatchjs.org).
 
 ```javascript
-  module.exports = {
+  var MagellanTest = require("testarmada-magellan-nightwatch/lib/base-test-class");
+
+  module.exports = new MyTest({
     "Load homepage": function (client) {
       client
         .url("http://localhost/");
@@ -28,8 +30,10 @@ Tests are structured as simple modules with a single exported object containing 
         .getEl("#help-modal")
         .assert.elContainsText("#help-modal", "This is the help modal");
     }
-  }
+  });
 ```
+
+For more examples, see the boilerplate project at: https://github.com/TestArmada/boilerplate
 
 ## Command Vocabulary
 
@@ -152,3 +156,49 @@ Some Nightwatch commands and assertions are supported out of the box.
 
 `magellan-nightwatch` supports the development of custom commands to allow the re-use of common parts of tests. If you're using the same snippets of code to fill out a form that appears in many tests, or have a common way to sign into your application, etc, then custom commands are for you. Please see the [Nightwatch.js documentation](http://nightwatchjs.org) for more on commands.
 
+#### Migrating Nightwatch Configuration
+
+To migrate an existing vanilla `nightwatch.json` configuration to `magellan-nightwatch`, update the following 
+
+Add Magellan's custom commands to your `custom_commands_path`:
+
+```
+  "custom_commands_path": [
+    "./node_modules/testarmada-magellan-nightwatch/lib/commands",
+```
+
+Add Magellan's custom assertions to your `custom_assertions_path`:
+
+```
+  "custom_assertions_path": [
+    "./node_modules/testarmada-magellan-nightwatch/lib/assertions",
+```
+
+Ensure Selenium server/driver paths are correct:
+
+```
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.46.0.jar",
+    "log_path": "reports",
+    "host": "127.0.0.1",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/testarmada-magellan-nightwatch/node_modules/chromedriver/lib/chromedriver/chromedriver",
+      "webdriver.ie.driver": ""
+    }
+  },
+```
+
+**Note: pay special attention to the version number for the selenium server above, currently at version `2.46.0`***
+
+Set up `phantomjs` path:
+
+```
+  "phantomjs" : {
+    "desiredCapabilities" : {
+      "browserName" : "phantomjs",
+      "javascriptEnabled" : true,
+      "acceptSslCerts" : true,
+      "phantomjs.binary.path" : "./node_modules/testarmada-magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
+```
