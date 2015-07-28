@@ -43,6 +43,7 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
   <tr>
     <td>Nightwatch Command / Assertion</td>
     <td>`magellan-nightwatch` Equivalent</td>
+    <td>Description</td>
   </tr>
   <tr>
     <td>click("[data-automation-id="mybutton"])</td>
@@ -65,6 +66,11 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
     <td>setElValue(selector, value)</td>
   </tr>
   <tr>
+    <td>(no nightwatch equivalent)</td>
+    <td>setMaskedElValue(selector, value, [fieldLength])</td>
+    <td>Set a value on a field that's using a mask (eg: MM/DD/YYYY or (555) 123-4567) with caret control</td>
+  </tr>
+  <tr>
     <td>waitForElementNotPresent(selector)</td>
     <td>waitForElNotPresent(selector)</td>
   </tr>
@@ -77,15 +83,15 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
     <td>assert.elContainsText(selector, regex or text)</td>
   </tr>
   <tr>
-    <td>_(no nightwatch equivalent)_</td>
+    <td>(no nightwatch equivalent)</td>
     <td>assert.elNotContainsText(selector, text)</td>
   </tr>
   <tr>
-    <td>_(no nightwatch equivalent)_</td>
+    <td>(no nightwatch equivalent)</td>
     <td>assert.selectorHasLength(selector, expectedLength)</td>
   </tr>
   <tr>
-  <td>_(no nightwatch equivalent)_</td>
+  <td>(no nightwatch equivalent)</td>
     <td>assert.elLengthGreaterThan(selector, selectUsing, lengthToCompare)</td>
   </tr>
 </table>
