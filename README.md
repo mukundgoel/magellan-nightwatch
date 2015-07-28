@@ -202,3 +202,17 @@ Set up `phantomjs` path:
       "acceptSslCerts" : true,
       "phantomjs.binary.path" : "./node_modules/testarmada-magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
 ```
+=======
+## Version History
+
+### 1.4.19
+*Released 25 July 2015*
+
+* Full refactor
+
+### 1.4.20
+*Released 28 July 2015*
+
+* Added `setMaskedElValue()`
+* Updated `README` with `nightwatch.json` migration instructions, better base test example.
+* Updated `selenium-server` to `2.46.0` (see migration guide on how this affects `nightwatch.json`)
