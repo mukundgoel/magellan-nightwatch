@@ -152,6 +152,19 @@ Some Nightwatch commands and assertions are supported out of the box.
 * `urlContains()`
 * `visible()`
 
+(From node):
+
+* `fail`
+* `equal`
+* `notEqual`
+* `deepEqual`
+* `notDeepEqual`
+* `strictEqual`
+* `notStrictEqual`
+* `throws`
+* `doesNotThrow`
+* `ifErro`
+
 #### Custom Commands
 
 `magellan-nightwatch` supports the development of custom commands to allow the re-use of common parts of tests. If you're using the same snippets of code to fill out a form that appears in many tests, or have a common way to sign into your application, etc, then custom commands are for you. Please see the [Nightwatch.js documentation](http://nightwatchjs.org) for more on commands.
