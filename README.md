@@ -218,6 +218,11 @@ Set up `phantomjs` path:
 =======
 ## Version History
 
+### 1.4.23
+*Released 06 August 2015*
+
+* Use default node-chromedriver install instead of fork (previously needed to work around firewall issue)
+
 ### 1.4.19
 *Released 25 July 2015*
 
