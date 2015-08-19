@@ -39,9 +39,9 @@ For more examples, see the boilerplate project at: https://github.com/TestArmada
 
 `magellan-nightwatch` is a wrapper around [Nightwatch.js](http://nightwatchjs.org), but is constrained to a limited subset of Nightwatch vocabulary to promote reliability.
 
-### Command Equivalent List
+### Enhanced Command List
 
-If you're familiar with Nightwatch or are looking to translate Nightwatch examples into `magellan-nightwatch`, refer to the table below for equivalent support commands:
+If you're familiar with Nightwatch or are looking to translate Nightwatch examples into `magellan-nightwatch`, refer to the table below for equivalent enhanced (i.e. more reliable) versions of Nightwatch commands:
 
 <table>
   <tr>
