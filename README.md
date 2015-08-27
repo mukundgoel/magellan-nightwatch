@@ -234,3 +234,8 @@ Set up `phantomjs` path:
 * Added `setMaskedElValue()`
 * Updated `README` with `nightwatch.json` migration instructions, better base test example.
 * Updated `selenium-server` to `2.46.0` (see migration guide on how this affects `nightwatch.json`)
+
+### 1.5.1
+*Released 27 August 2015*
+
+* Fixed problem with jQuery injection in some assertions.
