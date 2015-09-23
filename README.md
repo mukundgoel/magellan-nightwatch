@@ -83,6 +83,10 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
     <td>waitForElNotPresent(selector)</td>
   </tr>
   <tr>
+    <td>getPerformance(url)</td>
+    <td>Retrieves basic performance metrics using Navigation API (http://www.w3.org/TR/navigation-timing/)</td>
+  </tr>
+  <tr>
     <td>assert.containsText(selector, text)</td>
     <td>assert.elContainsText(selector, regex or text)</td>
   </tr>
@@ -237,5 +241,10 @@ Set up `phantomjs` path:
 
 ### 1.5.1
 *Released 27 August 2015*
+
+### 1.5.2
+
+### 1.5.3
+*Added getPerformance command to retrieve the performance results for a url
 
 * Fixed problem with jQuery injection in some assertions.
