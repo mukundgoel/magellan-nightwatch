@@ -1,6 +1,6 @@
 {
   "name": "testarmada-magellan-nightwatch",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "Nightwatch.js adapter for Magellan",
   "main": "index.js",
   "scripts": {
