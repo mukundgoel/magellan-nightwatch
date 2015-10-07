@@ -70,6 +70,18 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
     <td>setElValue(selector, value)</td>
   </tr>
   <tr>
+    <td>getValue(selector)</td>
+    <td>getElValue(selector, callback)</td>
+  </tr>
+  <tr>
+    <td>elements(using, value, callback)</td>
+    <td>getEls(selector, callback)</td>
+  </tr>
+  <tr>
+    <td>(no nightwatch equivalent)</td>
+    <td>scrollToEl(selector)</td>
+  </tr>
+  <tr>
     <td>(no nightwatch equivalent)</td>
     <td>setMaskedElValue(selector, value, [fieldLength])</td>
     <td>Set a value on a field that's using a mask (eg: MM/DD/YYYY or (555) 123-4567) with caret control</td>
@@ -222,11 +234,6 @@ Set up `phantomjs` path:
 =======
 ## Version History
 
-### 1.4.23
-*Released 06 August 2015*
-
-* Use default node-chromedriver install instead of fork (previously needed to work around firewall issue)
-
 ### 1.4.19
 *Released 25 July 2015*
 
@@ -239,12 +246,24 @@ Set up `phantomjs` path:
 * Updated `README` with `nightwatch.json` migration instructions, better base test example.
 * Updated `selenium-server` to `2.46.0` (see migration guide on how this affects `nightwatch.json`)
 
+### 1.4.23
+*Released 06 August 2015*
+
+* Use default node-chromedriver install instead of fork (previously needed to work around firewall issue)
+
 ### 1.5.1
 *Released 27 August 2015*
 
 ### 1.5.2
 
 ### 1.5.3
-*Added getPerformance command to retrieve the performance results for a url
+* Added `getPerformance()` command to retrieve the performance results for a url
 
 * Fixed problem with jQuery injection in some assertions.
+
+### 1.5.5
+*Released 1 October 2015*
+
+* Added `getElValue()`
+* Added `getEls()`
+* Added `scrollToEl()`
