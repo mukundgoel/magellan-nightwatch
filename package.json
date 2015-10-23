@@ -1,6 +1,6 @@
 {
   "name": "testarmada-magellan-nightwatch",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "Nightwatch.js adapter for Magellan",
   "main": "index.js",
   "scripts": {
@@ -62,6 +62,10 @@
     {
       "name": "Mukund Goel",
       "url": "https://github.com/mukundgoel"
+    },
+    {
+      "name": "Kimberly Lightholder",
+      "url": "https://github.com/1un4r"
     }
   ],
   "license": "MIT",
