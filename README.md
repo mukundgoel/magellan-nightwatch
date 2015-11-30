@@ -118,7 +118,7 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
 
 #### Custom selector tokens
 
-All `magellan-nightwatch` selector paths can refer to a `{token}` which your application can imlement a replacement value.
+All `magellan-nightwatch` selector paths can refer to a `{token}` which your application can implement a replacement value.
 The implementation is set as a static value on the `BaseTestClass` as `selectorToken`.  For example, to replace `{foo}`
 with `[data-automation-id="foo"]` you would use
 
