@@ -116,6 +116,18 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
   </tr>
 </table>
 
+#### Custom selector tokens
+
+All `magellan-nightwatch` selector paths can refer to a `{token}` which your application can implement a replacement value.
+The implementation is set as a static value on the `BaseTestClass` as `selectorToken`.  For example, to replace `{foo}`
+with `[data-automation-id="foo"]` you would use
+
+```
+require('testarmada-magellan-nightwatch/lib/base-test-class').selectorToken = function (value) {
+  return '[data-selector-id="' + value + '"]';
+}
+```
+
 #### Custom Commands Examples
 
 The commands included with `magellan-nightwatch` are safer, more reliable and "thrash-resistent" versions of Nightwatch commands. Note that `clickEl()`, `clickAutomationEl()`, and `setElValue()` are safe to call without first waiting for their selector to appear because they execute `getEl()` as part of their internals. Consider the following snippet:
