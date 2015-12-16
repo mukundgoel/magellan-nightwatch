@@ -85,7 +85,7 @@
     "yargs": "1.3.2"
   },
   "devDependencies": {
-    "nightwatch": "^0.7.9",
+    "nightwatch": "^0.8.9",
     "testarmada-magellan": "3.0.3"
   }
 }
