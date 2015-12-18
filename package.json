@@ -75,6 +75,7 @@
   "dependencies": {
     "chromedriver": "2.16.0",
     "cli-color": "0.3.2",
+    "lodash": "^3.10.0",
     "json-stringify-safe": "5.0.0",
     "jsonfile": "2.0.0",
     "phantomjs": "1.9.18",
@@ -86,6 +87,6 @@
   },
   "devDependencies": {
     "nightwatch": "^0.8.9",
-    "testarmada-magellan": "3.0.3"
+    "testarmada-magellan": "4.0.3"
   }
 }
