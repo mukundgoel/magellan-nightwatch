@@ -1,7 +1,6 @@
 {
   "src_folders": [
-    "./tests",
-    "./tests/pages"
+    "./tests"
   ],
   "output_folder": "reports",
   "custom_commands_path": [
@@ -9,10 +8,6 @@
   ],
   "custom_assertions_path": [
     "./lib/assertions"
-  ],
-
-  "page_objects_path": [
-    "./tests/pages"
   ],
 
   "selenium": {
