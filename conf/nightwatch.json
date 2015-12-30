@@ -1,5 +1,7 @@
 {
-  "src_folders": ["./tests"],
+  "src_folders": [
+    "./tests"
+  ],
   "output_folder": "reports",
   "custom_commands_path": [
     "./lib/commands"
@@ -23,8 +25,8 @@
   "test_settings": {
     "default": {
       "launch_url": "http://localhost",
-      "selenium_port" : 4444,
-      "selenium_host" : "localhost",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
       "silent": true,
       "sync_test_names": true,
       "screenshots": {
@@ -36,12 +38,12 @@
       }
     },
 
-    "phantomjs" : {
-      "desiredCapabilities" : {
-        "browserName" : "phantomjs",
-        "javascriptEnabled" : true,
-        "acceptSslCerts" : true,
-        "phantomjs.binary.path" : "./node_modules/phantomjs/bin/phantomjs"
+    "phantomjs": {
+      "desiredCapabilities": {
+        "browserName": "phantomjs",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
       }
     },
 
@@ -74,8 +76,8 @@
         "version": "",
         "tunnel-identifier": ""
       },
-      "selenium" : {
-        "start_process" : false
+      "selenium": {
+        "start_process": false
       }
     }
   }
