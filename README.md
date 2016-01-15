@@ -220,7 +220,7 @@ Ensure Selenium server/driver paths are correct:
 ```
   "selenium": {
     "start_process": true,
-    "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.46.0.jar",
+    "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.49.0.jar",
     "log_path": "reports",
     "host": "127.0.0.1",
     "port": 4444,
@@ -279,3 +279,7 @@ Set up `phantomjs` path:
 * Added `getElValue()`
 * Added `getEls()`
 * Added `scrollToEl()`
+
+### 4.0.0
+
+* Updated `selenium-standalone` to `2.49.0`
