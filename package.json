@@ -13,8 +13,7 @@
     "type": "git",
     "url": "git@github.com:TestArmada/magellan-nightwatch.git"
   },
-  "contributors": [
-  {
+  "contributors": [{
     "name": "Dave Cadwallader",
     "url": "https://github.com/geekdave"
   }, {
