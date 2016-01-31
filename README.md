@@ -158,17 +158,17 @@ You can use [regexper](http://regexper.com/#Price%20%5Cd%2B%5C.%5Cd%5Cd) to help
 
 ### As-is Supported Nightwatch Vocabulary
 
-After the merge of [PR #12](https://github.com/TestArmada/magellan-nightwatch/pull/12), all Nightwatch commands and assertions are supported out of the box.
+All Nightwatch commands and assertions are supported out of the box.
 
 #### Supported Nightwatch Commands
 
-Please refer to http://nightwatchjs.org/api#commands for a list of supported Nightwatch commands
+* Please refer to http://nightwatchjs.org/api#commands for a list of supported Nightwatch commands
 
 #### Supported Nightwatch Assertions
 
-Please refer to http://nightwatchjs.org/api#assertions for a list of supported Nightwatch assertions
+* Please refer to http://nightwatchjs.org/api#assertions for a list of supported Nightwatch assertions
 
-(From node):
+#### Supported Node Assertions
 
 * `fail`
 * `equal`
