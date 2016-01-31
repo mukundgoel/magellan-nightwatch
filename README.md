@@ -52,6 +52,7 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
   <tr>
     <td>click("[data-automation-id="mybutton"])</td>
     <td>clickAutomationEl("mybutton")</td>
+    <td>Need "data-automation-id" attribute in the clickable HTML element</td>
   </tr>
   <tr>
     <td>click(selector)</td>
