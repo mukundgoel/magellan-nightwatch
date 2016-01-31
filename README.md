@@ -162,11 +162,11 @@ All Nightwatch commands and assertions are supported out of the box.
 
 #### Supported Nightwatch Commands
 
-* Please refer to http://nightwatchjs.org/api#commands for a list of supported Nightwatch commands
+* Please refer to [Nightwatch Commands API](http://nightwatchjs.org/api#commands) for a list of supported Nightwatch commands
 
 #### Supported Nightwatch Assertions
 
-* Please refer to http://nightwatchjs.org/api#assertions for a list of supported Nightwatch assertions
+* Please refer to [Nightwatch Assertions API](http://nightwatchjs.org/api#assertions) for a list of supported Nightwatch assertions
 
 #### Supported Node Assertions
 
@@ -179,7 +179,7 @@ All Nightwatch commands and assertions are supported out of the box.
 * `notStrictEqual`
 * `throws`
 * `doesNotThrow`
-* `ifErro`
+* `ifError`
 
 #### Custom Commands
 
@@ -219,7 +219,7 @@ Ensure Selenium server/driver paths are correct:
   },
 ```
 
-**Note: pay special attention to the version number for the selenium server above, currently at version `2.46.0`***
+**Note: pay special attention to the version number for the selenium server above, currently at version `2.49.0`***
 
 Set up `phantomjs` path:
 
