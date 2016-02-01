@@ -52,6 +52,7 @@ If you're familiar with Nightwatch or are looking to translate Nightwatch exampl
   <tr>
     <td>click("[data-automation-id="mybutton"])</td>
     <td>clickAutomationEl("mybutton")</td>
+    <td>Needs "data-automation-id" attribute in the clickable HTML element's DOM for this command to work</td>
   </tr>
   <tr>
     <td>click(selector)</td>
@@ -158,29 +159,17 @@ You can use [regexper](http://regexper.com/#Price%20%5Cd%2B%5C.%5Cd%5Cd) to help
 
 ### As-is Supported Nightwatch Vocabulary
 
-Some Nightwatch commands and assertions are supported out of the box.
+All Nightwatch commands and assertions are supported out of the box.
 
 #### Supported Nightwatch Commands
 
-* `clearValue()`
-* `pause()`
-* `attributeEquals()`
-* `saveScreenshot()`
-* `setCookie()`
-* `url()`
-* `getText()`
-* `getValue()`
+* Please refer to [Nightwatch Commands API](http://nightwatchjs.org/api#commands) for a list of supported Nightwatch commands
 
 #### Supported Nightwatch Assertions
 
-* `cssClassPresent()`
-* `cssProperty()`
-* `elementNotPresent()`
-* `elementPresent()`
-* `urlContains()`
-* `visible()`
+* Please refer to [Nightwatch Assertions API](http://nightwatchjs.org/api#assertions) for a list of supported Nightwatch assertions
 
-(From node):
+#### Supported Node Assertions
 
 * `fail`
 * `equal`
@@ -191,7 +180,7 @@ Some Nightwatch commands and assertions are supported out of the box.
 * `notStrictEqual`
 * `throws`
 * `doesNotThrow`
-* `ifErro`
+* `ifError`
 
 #### Custom Commands
 
@@ -231,7 +220,7 @@ Ensure Selenium server/driver paths are correct:
   },
 ```
 
-**Note: pay special attention to the version number for the selenium server above, currently at version `2.46.0`***
+**Note: pay special attention to the version number for the selenium server above, currently at version `2.49.0`***
 
 Set up `phantomjs` path:
 
