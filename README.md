@@ -2,6 +2,50 @@
 
 The [NightwatchJS](http://nightwatchjs.org/) adapter for [Magellan](https://github.com/TestArmada/magellan)
 
+## IMPORTANT UPDATE NOTICE
+
+In **magellan-nightwatch@4.0.0** we've removed Chromedriver, Phantomjs and Selenium-server as these are not required while running your test on Saucelabs. However, they are still necessary if you want to run test locally. To use them, you will have to 
+
+1. Copy/cat following code to `package.json` of your test repo.
+
+  ```
+  "devDependencies": {
+    "selenium-server": "2.49.1",
+    "chromedriver": "2.16.0",
+    "phantomjs": "^1.9.19"
+  }
+  ```
+2. Run `npm install` again. Dependencies will be installed in `${REPO_ROOT}/node_modules`.
+3. Make sure your `nightwatch.json` file has the following change
+  ```
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-2.49.1.jar",
+    "log_path": "reports",
+    "host": "127.0.0.1",
+    "port": 12001,
+    "cli_args": {
+      "webdriver.ie.driver": "",
+      "webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver/chromedriver"
+    }
+  }
+  ```
+  
+  if you're using Phantomjs
+  ```
+  "test_settings":{
+    "phantomjs": {
+      "desiredCapabilities": {
+        "browserName": "phantomjs",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
+      }
+    }
+  }
+  ```
+
+
 ## Running Tests
 
 For instructions on how to run tests, please see the `magellan` documentation at: https://github.com/TestArmada/magellan
